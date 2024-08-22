@@ -1,0 +1,252 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background-color: #5da130;
+    overflow: hidden;
+}
+
+.score{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 20px 20px;
+    background-color: #e0d61e;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #286906;
+}
+
+.back_game{
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 25vh;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(255 254 1 / 66%);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 3px solid rgb(106, 23, 23);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 35px;
+    font-weight: 700;
+    color: green;
+}
+
+.finish_text{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.finish_text::before{
+    content: '\2615';
+    display: block;
+    margin-left: 20px;
+    font-size: 35px;
+    animation: ease .3s jump infinite;
+    animation-direction: alternate;
+    animation-delay: .1s;
+    margin-right: 10px;
+}
+
+finish_text::before{
+    animation-delay: .1s;
+    margin-right: 10px;
+}
+
+@keyframes jump{
+    from{
+        transform: translateY(5px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.score_finish{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 50px;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+.btn-5 {
+  text-align: center;
+  display: inline-block;
+  padding: 15px 40px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  letter-spacing: 2px;
+  position:relative;
+  overflow:hidden;
+}
+
+.btn-5:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0;
+  background : green;
+  left: 0;
+  bottom: 0;
+  transition: all .3s;
+  opacity: 0.3;
+}
+
+.btn-5:hover:before {
+  width: 100%;
+}
+
+.car{
+    position: absolute;
+    width: 90px;
+    transform: translateY(70vh);
+}
+
+.road{
+    background: #817f84;
+    width: 300px;
+    height: 110vh;
+}
+
+.tree{
+    position: absolute;
+}
+
+.tree1{
+    transform: translate(-276px, -30vh);
+    width: 250px;
+}
+
+.tree2{
+    transform: translate(-276px, 5vh);
+    width: 250px;
+}
+
+.tree3{
+    transform: translate(-276px, 40vh);
+    width: 250px;
+}
+
+.tree4{
+    transform: translate(-276px, 75vh);
+    width: 250px;
+}
+
+.tree5{
+    transform: translate(276px, -30vh);
+    width: 250px;
+}
+
+.tree6{
+    transform: translate(276px, 5vh);
+    width: 250px;
+}
+
+.tree7{
+    transform: translate(276px, 40vh);
+    width: 250px;
+}
+
+.tree8{
+    transform: translate(276px, 75vh);
+    width: 250px;
+}
+
+.house{
+    position: absolute;
+    width: 400px;
+}
+
+.home1{
+    transform: translate(-504px, 9vh);
+    width: 250px;
+}
+
+.home2{
+    transform: translate(500px, 9vh);
+    width: 250px;
+}
+
+.home3{
+    transform: translate(500px, 57vh);
+    width: 250px;
+}
+
+.home4{
+    transform: translate(-500px, 57vh);
+    width: 250px;
+}
+
+.game-btn{
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform .3s ease;
+}
+
+.game-btn:hover{
+    transform: scale(1.2);
+}
+
+.game-btn img{
+    width: 50px;
+    height: 50px;
+}
+
+.game-btn .play{
+    display: none;
+}
+
+.auto{
+    position: absolute;
+    width: 90px;
+    transform: translate(-90px, -50px);
+}
+
+.police{
+    position: absolute;
+    width: 75px;
+    transform: translate(90px, -100px) rotateZ(45deg);
+    /*filter: drop-shadow(0 0 20px blue);*/
+}
+
+.bonus{
+    position: absolute;
+    width: 90px;
+    transform: translate(50px, -100px);
+}
